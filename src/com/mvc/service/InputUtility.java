@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class InputUtility {
     private static Scanner titl = new Scanner(System.in);
+
     public static String inputTitleValueWithScanner(CalculateView view){
         view.printMessage(view.INPUT_STRING_TITLE);
         while(!titl.hasNext()){

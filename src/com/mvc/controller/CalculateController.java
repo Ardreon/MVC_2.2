@@ -23,7 +23,7 @@ public class CalculateController {
        model.setNumber_of_pages(InputUtility.inputPagesValueWithScanner(view));
        model.setPrice(InputUtility.inputPriceValueWithScanner(view));
 
-       view.printMessageAndResult(view.INFORMATION, model.getTitle() + model.getAuthor(), model.getPublishing_house(), model.getYear(), model.getNumber_of_pages(), model.getPrice());
+       view.printMessageAndResult(model.getTitle() + " " + model.getAuthor(), model.getPublishing_house(), model.getYear(), model.getNumber_of_pages(), model.getPrice());
 
     }
 
